@@ -2,8 +2,11 @@ package com.jun.inventory_app.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Entity
+@Entity @Getter @Setter @NoArgsConstructor
 @Table(name = "stocks")
 public class Stock {
     @Id

@@ -1,6 +1,7 @@
 package com.jun.inventory_app.service;
 
 import com.jun.inventory_app.dto.WarehouseDto;
+import com.jun.inventory_app.model.Stock;
 import com.jun.inventory_app.model.Warehouse;
 import com.jun.inventory_app.qeury.WarehouseQueryRepository;
 import com.jun.inventory_app.qeury.WarehouseSearchCondition;
@@ -20,6 +21,7 @@ public class WarehouseService {
     public List<Warehouse> search (WarehouseSearchCondition condition){
         return queryRepository.search(condition);
     }
+
 
     public Warehouse getById(Long id){
         return warehouseRepository.findById(id)
